@@ -1,0 +1,14 @@
+body {
+  background-color: rgb(18, 145, 145);
+  text-align: center;
+}
+footer {
+  color: black;
+  text-align: center;
+  background-color: aquamarine;
+}
+
+div {
+  display: block;
+  text-align: center;
+}
