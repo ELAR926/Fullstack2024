@@ -1,9 +1,12 @@
 .novedades h2 {
   text-align: center;
+  font-size: 40px;
+  font-weight: 900;
 }
 
 .eventos img {
   width: 100%;
+  transition: all 1s;
 }
 /* CARTA DE NOVEDADES */
 .novedades a {
@@ -21,4 +24,13 @@
   justify-content: space-around;
   gap: 8px;
   width: 100%;
+}
+
+.eventos img:hover {
+  transform: scale(1.05);
+}
+
+.novedades a p {
+  font-size: 30px;
+  font-weight: 900;
 }
