@@ -1,17 +1,338 @@
-* {
-    padding: 10;
+html {
     box-sizing: border-box;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-main {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #070707;
-    background-color: #e4dc73;
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: white;
 }
-footer{
-    background-color: rgb(211, 190, 164);
+
+
+div{
+    display: block;
+    unicode-bidi: isolate;
 }
+
+
+
+
+
+
+
+
+                                               /* INICIO */
+/* ENCABEZADO */
+
+#header{
+    background-image: url("https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2018/06/26120230/iguazu-argentina.jpg");
+    margin: 0;
+    padding: 0;
+    position: relative;
+    padding-left: 0px;
+    padding-right: 0px; 
+    max-width: 100%; 
+    height: 600px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center; 
+}
+img {
+    filter: brightness(0.6); /* Ajusta el brillo del logo */
+}
+
+
+.header1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 100px;
+    width: 50;
+    margin: 20px;
+    position: fixed;
+    z-index: 100;
+    box-sizing: border-box;
+    
+}
+.columna2{
+    height: 100px;
+    width: 100%;
+    margin-left: 50px;
+
+}
+
+.logo3{
+    background-image: url("Img/logo.jpg");
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.columna4{
+    display: grid;
+    background-color: white;
+    grid-template-columns: repeat(5, 100px);
+    height: 50px;
+    width: 100%;
+    justify-items: center;
+    align-self: center;
+    align-items: center;
+    border-radius: 40px;
+    transition-duration: 0.5s; 
+    transition-delay: 0.2s;
+    transition: background-color 1s ease;
+    transition: opacity 0.5s ease;
+    box-sizing: border-box;
+}
+
+
+.kanit-black,
+.inicio,
+.novedades,
+.actividades,
+.alojamiento,
+.contacto {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+.inicio,
+.novedades,
+.actividades,
+.alojamiento,
+.contacto{
+    background-color: white;
+    color: black;
+    transition: background-color 0.6s ease;
+
+
+}
+.inicio:hover,
+.novedades:hover,
+.actividades:hover,
+.alojamiento:hover,
+.contacto:hover{
+    background-color: #5bffb0 ;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+.icon5{
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    justify-items: end;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+    margin-left: 50px;
+    margin: 3px;
+    justify-items: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+.contenedor{
+    padding: 0;
+    margin: 0;
+    display: grid;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+
+.linea.margin{
+    margin: 10px;
+    background-color: white;
+}
+
+.con.hijo .imagen{
+    padding: 0;
+    margin: 0;
+
+}
+
+
+
+.mas{
+    text-align: center;
+    font-size: 1.7em;
+    border-radius: 20px;
+    color: crimson;
+    border: 1px solid crimson;
+    background-color: white;
+    margin-top: 110px;
+    margin-bottom: 30px;
+    margin-left: 600px;
+    margin-right: 600px;
+    transition: background-color 0.6s ease;
+
+}
+
+
+
+.mas:hover{
+    background-color: rgb(198, 17, 53);
+    color: white;
+}
+
+
+.con.hijo2{
+    display: grid;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: end;
+    align-self: center;
+    height: 100px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+
+h2{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 125;
+    font-style: normal;
+    font-size: 3em;
+    margin-bottom: 10px;
+
+}
+.montserrat .h2{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 125;
+    font-style: normal;
+  }
+
+
+.contenido3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2 1fr);
+    padding-left: 150px;
+    padding-right: 150px;
+    column-gap: 40px;
+    row-gap: 90px;
+    background-color: white;
+    box-sizing: border-box;
+}
+p{
+    margin: 0;
+    margin-bottom: 0;
+}
+
+
+.hijo3, .hijo4,
+.hijo5, .hijo6,
+.hijo7, .hijo8,
+.hijo9, .hijo10{
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease; /* Agrega una transición suave para el efecto */
+    box-sizing: border-box;
+
+}
+.hijo3:hover, .hijo4:hover,
+.hijo5:hover, .hijo6:hover,
+.hijo7:hover, .hijo8:hover,
+.hijo9:hover, .hijo10:hover {
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    transform: translateY(-30px)
+    
+}
+
+.hijo3, .hijo4,
+.hijo5, .hijo6,
+.hijo7, .hijo8,
+.hijo9, .hijo10, img {
+    border-radius: 3px;
+}
+
+.image-wrapper {
+    display: inline-block; /* Permite que el contenedor de la imagen se ajuste al tamaño de la imagen */
+    position: relative;
+}
+
+.logo {
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+
+
+main{
+    margin-top: 10px;
+}
+
+
+
+footer h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 3.5s steps(40, end) infinite;
+  }
+  .animationContainer {
+    width: 100%;
+    text-align: center;
+  }
+  footer {
+    padding: 50px;
+    background-color: rgb(79, 128, 30);
+    position: relative;
+  }
+  .final {
+    display: flex;
+    align-items: center;
+  }
+  
+  .final hr {
+    width: 100%;
+    height: 3px;
+    color: black;
+  }
+  
+  .final p {
+    width: 1000px;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  .redes {
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    top: -15px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    border-radius: 4px;
+    display: flex;
+    padding: 6px 22px;
+    justify-content: space-between;
+  }
+  
 .header-menubar {
     background-color: rgb(86, 216, 173);
     display: flex;
@@ -42,3 +363,1078 @@ align-items: center;
         padding: 5px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                              /* NOVEDADES */
+#header1{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    position: relative;
+    padding-left: 0px;
+    padding-right: 0px; 
+    max-width: 100%; 
+    height: 100px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center; 
+}
+img {
+    filter: brightness(0.6); /* Ajusta el brillo del logo */
+}
+
+
+.header1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 100px;
+    width: 50;
+    margin: 20px;
+    position: fixed;
+    z-index: 100;
+    box-sizing: border-box;
+    
+}
+.columna2{
+    height: 100px;
+    width: 100%;
+    margin-left: 50px;
+
+}
+
+.logo3{
+    background-image: url("Img/logo.jpg");
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.columna4{
+    display: grid;
+    background-color: white;
+    grid-template-columns: repeat(5, 100px);
+    height: 50px;
+    width: 100%;
+    justify-items: center;
+    align-self: center;
+    align-items: center;
+    border-radius: 40px;
+    transition-duration: 0.5s; 
+    transition-delay: 0.2s;
+    transition: background-color 1s ease;
+    transition: opacity 0.5s ease;
+    box-sizing: border-box;
+}
+
+
+.kanit-black,
+.inicio,
+.novedades,
+.actividades,
+.alojamiento,
+.contacto {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+.inicio,
+.novedades,
+.actividades,
+.alojamiento,
+.contacto{
+    background-color: white;
+    color: black;
+    transition: background-color 0.6s ease;
+
+
+}
+.inicio:hover,
+.novedades:hover,
+.actividades:hover,
+.alojamiento:hover,
+.contacto:hover{
+    background-color: #5bffb0 ;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+.icon5{
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    justify-items: end;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+    margin-left: 50px;
+    margin: 3px;
+    justify-items: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.novedades h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+  }
+  
+  .eventos img {
+    width: 100%;
+    transition: all 1s;
+  }
+  /* CARTA DE NOVEDADES */
+  .novedades a {
+    width: 100%;
+    padding: 16px;
+    height: 400px;
+    background-color: white;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .eventos {
+    display: flex;
+    justify-content: space-around;
+    gap: 8px;
+    width: 100%;
+  }
+  
+  .eventos img:hover {
+    transform: scale(1.05);
+  }
+  
+  .novedades a p {
+    font-size: 30px;
+    font-weight: 900;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                    /* ACTIVIDADES */
+#header2{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    position: relative;
+    padding-left: 0px;
+    padding-right: 0px; 
+    max-width: 100%; 
+    height: 100px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center; 
+}
+img {
+    filter: brightness(0.6); /* Ajusta el brillo del logo */
+}
+
+
+.header1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 100px;
+    width: 50;
+    margin: 20px;
+    position: fixed;
+    z-index: 100;
+    box-sizing: border-box;
+    
+}
+.columna2{
+    height: 100px;
+    width: 100%;
+    margin-left: 50px;
+
+}
+
+.logo3{
+    background-image: url("Img/logo.jpg");
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.columna4{
+    display: grid;
+    background-color: white;
+    grid-template-columns: repeat(5, 100px);
+    height: 50px;
+    width: 100%;
+    justify-items: center;
+    align-self: center;
+    align-items: center;
+    border-radius: 40px;
+    transition-duration: 0.5s; 
+    transition-delay: 0.2s;
+    transition: background-color 1s ease;
+    transition: opacity 0.5s ease;
+    box-sizing: border-box;
+}
+
+
+.kanit-black,
+.inicio,
+.novedades,
+.actividades,
+.alojamiento,
+.contacto {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+.inicio,
+.novedades,
+.actividades,
+.alojamiento,
+.contacto{
+    background-color: white;
+    color: black;
+    transition: background-color 0.6s ease;
+
+
+}
+.inicio:hover,
+.novedades:hover,
+.actividades:hover,
+.alojamiento:hover,
+.contacto:hover{
+    background-color: #5bffb0 ;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+.icon5{
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    justify-items: end;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+    margin-left: 50px;
+    margin: 3px;
+    justify-items: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                   /* ALOJAMIENTO */
+#header3{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    position: relative;
+    padding-left: 0px;
+    padding-right: 0px; 
+    max-width: 100%; 
+    height: 100px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center; 
+}
+img {
+    filter: brightness(0.6); /* Ajusta el brillo del logo */
+}
+
+
+.header1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 100px;
+    width: 50;
+    margin: 20px;
+    position: fixed;
+    z-index: 100;
+    box-sizing: border-box;
+    
+}
+.columna2{
+    height: 100px;
+    width: 100%;
+    margin-left: 50px;
+
+}
+
+.logo3{
+    background-image: url("Img/logo.jpg");
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.columna4{
+    display: grid;
+    background-color: white;
+    grid-template-columns: repeat(5, 100px);
+    height: 50px;
+    width: 100%;
+    justify-items: center;
+    align-self: center;
+    align-items: center;
+    transition-duration: 0.5s; 
+    transition-delay: 0.2s;
+    transition: background-color 1s ease;
+    transition: opacity 0.5s ease;
+    box-sizing: border-box;
+}
+
+
+.kanit-black,
+.inicio,
+.novedades,
+.actividades,
+.alojamiento,
+.contacto {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+.inicio,
+.novedades,
+.actividades,
+.alojamiento,
+.contacto{
+    background-color: white;
+    color: black;
+    transition: background-color 0.6s ease;
+
+
+}
+.inicio:hover,
+.novedades:hover,
+.actividades:hover,
+.alojamiento:hover,
+.contacto:hover{
+    background-color: #5bffb0 ;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+.icon5{
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    justify-items: end;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+    margin-left: 50px;
+    margin: 3px;
+    justify-items: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                      /* CONTACTO */
+body.contact{
+    background: linear-gradient(rgb(230, 153, 11), rgb(233, 233, 14));
+
+}
+
+
+#header4{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    position: relative;
+    padding-left: 0px;
+    padding-right: 0px; 
+    max-width: 100%; 
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center; 
+}
+img {
+    filter: brightness(0.6); /* Ajusta el brillo del logo */
+}
+
+
+.header1{
+    display: grid;
+    background-color: white;
+    grid-template-columns: repeat(3,1fr);
+    height: 100px;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    box-sizing: border-box;
+    
+}
+.columna2{
+    height: 100px;
+    width: 100%;
+    margin-left: 50px;
+
+}
+
+.logo3{
+    background-image: url("Img/logo.jpg");
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.columna4{
+    display: grid;
+    background-color: white;
+    grid-template-columns: repeat(5, 100px);
+    height: 50px;
+    width: 100%;
+    justify-items: center;
+    align-self: center;
+    align-items: center;
+    border-radius: 40px;
+    transition-duration: 0.5s; 
+    transition-delay: 0.2s;
+    transition: background-color 1s ease;
+    transition: opacity 0.5s ease;
+    box-sizing: border-box;
+}
+
+
+.kanit-black,
+.inicio,
+.novedades,
+.actividades,
+.alojamiento,
+.contacto {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+.inicio,
+.novedades,
+.actividades,
+.alojamiento,
+.contacto{
+    background-color: white;
+    color: black;
+    transition: background-color 0.6s ease;
+
+
+}
+.inicio:hover,
+.novedades:hover,
+.actividades:hover,
+.alojamiento:hover,
+.contacto:hover{
+    background-color: #5bffb0 ;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+.icon5{
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    justify-items: end;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+    margin-left: 50px;
+    margin: 3px;
+    justify-items: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+main{
+
+    margin-top: 200px;
+}
+
+.form-centrar{
+
+    display: grid;
+    align-self: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                      /* robles */
+
+.robles-header2{
+    background-image: url("https://turismo.moreno.gob.ar/assets/images/atracciones/reserva_los_robles.jpg");
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    position: relative;
+    padding-left: 0px;
+    padding-right: 0px; 
+    max-width: 100%; 
+    height: 700px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center; 
+}
+img {
+    filter: brightness(0.6); /* Ajusta el brillo del logo */
+}
+
+
+.robles-header1{
+    display: grid;
+    position: fixed;
+    background-color: white;
+    grid-template-columns: repeat(3,1fr);
+    height: 100px;
+    width: 50;
+    z-index: 100;
+    box-sizing: border-box;
+    
+}
+.robles-columna2{
+    height: 100px;
+    width: 100%;
+    margin-left: 50px;
+
+}
+
+.robles-logo3{
+    background-image: url("Img/logo.jpg");
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.robles-columna4{
+    display: grid;
+    background-color: white;
+    grid-template-columns: repeat(5, 100px);
+    height: 50px;
+    width: 100%;
+    justify-items: center;
+    align-self: center;
+    align-items: center;
+    border-radius: 40px;
+    transition-duration: 0.5s; 
+    transition-delay: 0.2s;
+    transition: background-color 1s ease;
+    transition: opacity 0.5s ease;
+    box-sizing: border-box;
+}
+
+
+.kanit-black,
+.robles-inicio,
+.robles-novedades,
+.robles-actividades,
+.robles-alojamiento,
+.robles-contacto {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+.robles-inicio,
+.robles-novedades,
+.robles-actividades,
+.robles-alojamiento,
+.robles-contacto{
+    background-color: white;
+    color: black;
+    transition: background-color 0.6s ease;
+
+
+}
+.robles-inicio:hover,
+.robles-novedades:hover,
+.robles-actividades:hover,
+.robles-alojamiento:hover,
+.robles-contacto:hover{
+    background-color: #5bffb0 ;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+.robles-icon5{
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    justify-items: end;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+    margin-left: 50px;
+    margin: 3px;
+    justify-items: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.contenido-ppal{
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+    height: 1000px;
+    margin 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+
+}
+
+
+
+.robles-contenido {
+    display: grid;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: end;
+    align-self: center;
+    background-color: white;
+    box-sizing: border-box;
+}
+h1{
+    display: grid;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: end;
+    align-self: center;
+    height: 100px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.robles-informacion{
+    height: 100%;
+    box-sizing: border-box;
+}
+
+footer h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 3.5s steps(40, end) infinite;
+  }
+  .animationContainer {
+    width: 100%;
+    text-align: center;
+  }
+  footer {
+    padding: 50px;
+    background-color: rgb(79, 128, 30);
+    position: relative;
+  }
+  .final {
+    display: flex;
+    align-items: center;
+  }
+  
+  .final hr {
+    width: 100%;
+    height: 3px;
+    color: black;
+  }
+  
+  .final p {
+    width: 1000px;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  .redes {
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    top: -15px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    border-radius: 4px;
+    display: flex;
+    padding: 6px 22px;
+    justify-content: space-between;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                       /* VILLAVICENCIO */
+  .villavicencio-header2{
+    background-image: url("https://mendoza-camara.org/wp-content/uploads/2019/11/Hotel-y-Reserva-Villavicencio-1.jpg");
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    position: relative;
+    padding-left: 0px;
+    padding-right: 0px; 
+    max-width: 100%; 
+    height: 700px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center; 
+}
+img {
+    filter: brightness(0.6); /* Ajusta el brillo del logo */
+}
+
+
+.villavicencio-header1{
+    display: grid;
+    background-color: white;
+    position: fixed;
+    grid-template-columns: repeat(3,1fr);
+    height: 100px;
+    width: 50;
+    z-index: 100;
+    box-sizing: border-box;
+    
+}
+.villavicencio-columna2{
+    height: 100px;
+    width: 100%;
+    margin-left: 50px;
+
+}
+
+.villavicencio-logo3{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/5f/PARQUESNACIONALES.png");
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.villavicencio-columna4{
+    display: grid;
+    background-color: white;
+    grid-template-columns: repeat(5, 100px);
+    height: 50px;
+    width: 100%;
+    justify-items: center;
+    align-self: center;
+    align-items: center;
+    border-radius: 40px;
+    transition-duration: 0.5s; 
+    transition-delay: 0.2s;
+    transition: background-color 1s ease;
+    transition: opacity 0.5s ease;
+    box-sizing: border-box;
+}
+
+
+.kanit-black,
+.villavicencio-inicio,
+.villavicencio-novedades,
+.villavicencio-actividades,
+.villavicencio-alojamiento,
+.villavicencio-contacto {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+.villavicencio-inicio,
+.villavicencio-novedades,
+.villavicencio-actividades,
+.villavicencio-alojamiento,
+.villavicencio-contacto{
+    background-color: white;
+    color: black;
+    transition: background-color 0.6s ease;
+
+
+}
+.villavicencio-inicio:hover,
+.villavicencio-novedades:hover,
+.villavicencio-actividades:hover,
+.villavicencio-alojamiento:hover,
+.villavicencio-contacto:hover{
+    background-color: #5bffb0 ;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+.villavicencio-icon5{
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    justify-items: end;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+    margin-left: 50px;
+    margin: 3px;
+    justify-items: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.contenido-ppal{
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+    height: 1000px;
+    margin 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+
+}
+
+
+
+.villavicencio-contenido {
+    display: grid;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: end;
+    align-self: center;
+    background-color: white;
+    box-sizing: border-box;
+}
+h1{
+    display: grid;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: end;
+    align-self: center;
+    height: 100px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.villavicencio-informacion{
+    height: 100%;
+    box-sizing: border-box;
+}
+
+footer h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 3.5s steps(40, end) infinite;
+  }
+  .animationContainer {
+    width: 100%;
+    text-align: center;
+  }
+  footer {
+    padding: 50px;
+    background-color: rgb(79, 128, 30);
+    position: relative;
+  }
+  .final {
+    display: flex;
+    align-items: center;
+  }
+  
+  .final hr {
+    width: 100%;
+    height: 3px;
+    color: black;
+  }
+  
+  .final p {
+    width: 1000px;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  .redes {
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    top: -15px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    border-radius: 4px;
+    display: flex;
+    padding: 6px 22px;
+    justify-content: space-between;
+  }
+  
