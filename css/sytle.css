@@ -282,7 +282,6 @@ footer {
 
 
 /* CONTACTOS */
-/* CONTACTOS */
 form{
     padding: 40px 45px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -339,7 +338,7 @@ input::placeholder, textarea::placeholder{
     text-decoration: none;
 }
 
-.btn{
+.submit{
     font-size: 16px;
     color: #FFFFFF;
     border: 0;
@@ -349,8 +348,19 @@ input::placeholder, textarea::placeholder{
     cursor: pointer;
 }
 
-.btn:hover{
+.submit:hover{
     background-color: #50e04b;
+}
+
+.input-group label {
+    color: #283629;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px; /* Reducir el espacio entre los nombres y los radio buttons */
+}
+
+.input-group input[type="radio"] {
+    margin-top: 4px; /* Ajustar el espacio entre los radio buttons y los nombres */
 }
 
 @media(max-widht: 991){
