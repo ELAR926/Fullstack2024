@@ -403,6 +403,9 @@ textarea::placeholder {
 .select-container{
   display: flex;
   justify-content: center;
+  align-self: center;
+  font-family: Rubik, sans-serif;
+  font-weight: 600;
   position: relative;
   min-width: 250px;
   height: 50px;
@@ -426,10 +429,6 @@ select{
 .select-container .icon-container{
   width: 50px;
   height: 100%;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: white;
 }
 
