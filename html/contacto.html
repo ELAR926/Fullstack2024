@@ -29,7 +29,7 @@
       
     <main>
         <section>
-            <form>
+            <form id="contactForm">
 
                 <h2> Contacto</h2>
         
@@ -49,6 +49,8 @@
                     
                     <div class="input-group1">
                         <section>
+                            <h4>Ingrese Su Genero:</h4>
+                            <br>
                             <label for="Genero">Hombre</label>
                             <div class="radio-group">
                                 <input type="radio" id="hombre" name="Genero">
@@ -63,8 +65,7 @@
                             </div>
                         </section>
                         <section class="select-container">  
-                            
-                            <select name="Edad" id="Edad">
+                            <select class="edad" name="Edad" id="Edad">
                                 <option value="Opcion0">Seleccione Su Edad</option>
                                 <option value="Opcion1">18 Años</option>
                                 <option value="Opcion2">19 Años</option>
@@ -86,10 +87,7 @@
                                 <option value="Opcion18">35 Años</option>
                                 <option value="Opcion19">36 Años</option>
                                 <option value="Opcion20">37 Años</option>
-                                
-                                <div class="icon-container">
-                                    <i class="bi bi-caret-down"></i>
-                                </div>
+
                             </select>
                         </section>
                     </div>
@@ -103,8 +101,15 @@
                         <a href="#">Politica de privacidad</a>
                         <a href="#">Terminos y condiciones</a>
                     </div>
+
+                    <div class="form-check mb-3">
+                        <label class="form-check-label" for="copiacorreo">Quiero recibir una copia del mensaje en mi correo electrónico</label>
+                        <input class="form-check-input" type="checkbox" value="" id="copiacorreo" name="copiacorreo">
+
+                    </div>
                     
-                    <input type="submit" type="submit" value="Enviar">
+
+                    <input class="boton submit" type="submit" onclick="return enviarFormulario()" value="Enviar">
         
                 </div>
         
@@ -115,5 +120,9 @@
         <p class="centered">Derechos reservados SolAr 2024</p>
     </footer>
     
+
+
+
+    <script src="/script.js"></script>
 </body>
 </html>

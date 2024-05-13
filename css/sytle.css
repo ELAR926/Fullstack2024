@@ -8,6 +8,12 @@
   padding: 0;
 }
 
+:root{
+  --tran-03: all 0.2s ease;
+  --tran-04: all 0.3s ease;
+  --tran-05: all 0.4s ease;
+}
+
 html,
 body {
   scroll-behavior: smooth;
@@ -28,10 +34,31 @@ footer {
 
 header {
   background-color: #96cca8;
-  display: flex;
+  display: grid;
+  grid-template-columns: 100px 700px 1fr;
   justify-content: flex-start;
   align-items: center;
 }
+
+.logo {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+
+.chevron {
+  display: grid;
+  place-items: center end; 
+  padding: 20px;
+}
+
+.bi.bi-chevron-double-left {
+  font-size: 2em; 
+}
+
 
 .button {
   background-color: #fff9e6;
@@ -158,17 +185,10 @@ img {
 }
 
 .image-wrapper {
-  display: inline-block; /* Permite que el contenedor de la imagen se ajuste al tamaño de la imagen */
+  display: inline-block; 
   position: relative;
 }
 
-.logo {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
 
 .mas {
   text-align: center;
@@ -377,16 +397,21 @@ textarea::placeholder {
     border-radius: 25px;
     background-color: #51d94c;
     box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
-    cursor: pointer;
 }
 
 .submit:hover{
     background-color: #50e04b;
 }
 
+.boton{
+  background-color: rgba(25, 254, 0, 0.4);
+
+  cursor: pointer;
+}
+
 .input-group1{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 240px 80px;
 }
 
 .input-group1 label {
@@ -410,6 +435,7 @@ textarea::placeholder {
   min-width: 250px;
   height: 50px;
 
+  
 }
 
 select{
@@ -436,6 +462,10 @@ select{
   font-size: 30px;
   color: black;
 
+}
+
+.edad{
+  cursor: pointer;
 }
 
 @media(max-widht: 991){
