@@ -157,7 +157,7 @@ p {
 .hijo9,
 .hijo10 {
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-  transition: transform 0.2s ease; /* Agrega una transición suave para el efecto */
+  transition: transform 0.2s ease; 
   box-sizing: border-box;
 }
 .hijo3:hover,
@@ -181,7 +181,7 @@ p {
 .hijo9,
 .hijo10,
 img {
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 .image-wrapper {
@@ -190,7 +190,18 @@ img {
 }
 
 
-.mas {
+.hide{
+  display: none;
+}
+
+
+/* show es parte de javascript */
+.show{
+  display: block;
+
+}
+
+.readMore_btn {
   text-align: center;
   font-size: 1.7em;
   border-radius: 20px;
@@ -204,7 +215,7 @@ img {
   transition: background-color 0.6s ease;
 }
 
-.mas:hover {
+.readMore_btn:hover {
   background-color: rgb(198, 17, 53);
   color: white;
 }
