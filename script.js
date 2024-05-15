@@ -9,6 +9,13 @@ header.innerHTML = `
 
 
 
+
+
+
+
+
+
+
 //Ver Mas en pagina del inicio
 let hideText_btn = document.getElementById('hideText_btn');
 
