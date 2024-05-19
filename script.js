@@ -1,9 +1,17 @@
-const header = document.querySelector('header');
-header.innerHTML = `
-<div id="Logo">
-    <img src="../Recursos/Img/logo.png" alt="Imagen de logo" width="100px">
-</div>
-<h1>RESERVA NATURAL "LOS ROBLES"</h1>`;
+
+// HEADER
+
+const nav = document.querySelector("#nav");
+const abrir = document.querySelector("#abrir");
+const cerrar = document.querySelector("#cerrar");
+
+abrir.addEventListener("click", () => {
+    nav.classList.add("visible");
+});
+
+cerrar.addEventListener("click", () => {
+    nav.classList.remove("visible"); 
+});
 
 
 
@@ -12,11 +20,7 @@ header.innerHTML = `
 
 
 
-
-
-
-
-//Ver Mas en pagina del inicio
+//"Ver Mas" en pagina del inicio
 let hideText_btn = document.getElementById('hideText_btn');
 
 let hideText = document.getElementById('hideText');

@@ -9,35 +9,31 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
+  
   <header>
-    <div id="Logo">
-        <img src="../Recursos/Img/logo.png" alt="Imagen de logo" width="100px" width="100px">
+    <div class="Logo">
+      <img src="../Recursos/Img/logo.png" alt="Imagen de logo" width="100px" height="100px">
+      
     </div>
-    <h1>ACTIVIDADES</h1>
-  </header>
+    
+    <button id="abrir" class="menu-icon">
+      <i style="width: 100px; height: 100px;" class="bi bi-justify"></i>
+    </button>
 
-  <nav class="barra-button">
-    <ul class="barra-button1">
-      <div>
-        <li><a class="button" href="index.html">Inicio</a></li>
-      </div>
-      <div>
-        <li><a class="button" href="novedades.html">Novedades</a></li>
-      </div>
-      <div>
-        <li><a class="button" href="actividades.html">Actividades</a></li>
-      </div>
-      <div>
-        <li><a class="button" href="alojamiento.html">Alojamiento</a></li>
-      </div>
-      <div>
-        <li><a class="button" href="contacto.html">Contacto</a></li>
-      </div>
-      <div>
-        <li><a class="button" href="reservas.html">Reservas</a></li>
-      </div>
-    </ul>
-  </nav>
+    <h1>CONTACTO"</h1>
+
+    <nav class="nav" id="nav">
+      <button id="cerrar">cerrar</button>
+      <ul class="nav-list">
+        <li><a class="btn" id= "btn2" href="index.html">Inicio</a></li>
+        <li><a class="btn" id= "btn2" href="novedades.html">Novedades</a></li>
+        <li><a class="btn" id= "btn2" href="actividades.html">Actividades</a></li>
+        <li><a class="btn" id= "btn2" href="alojamiento.html">Alojamiento</a></li>
+        <li><a class="btn" id= "btn2" href="contacto.html">Contacto</a></li>
+        <li><a class="btn" id= "btn2" href="reservas.html">Reservas</a></li>
+      </ul>
+    </nav>
+  </header>
       
     <main>
         <section>
@@ -196,24 +192,10 @@
 
 
 
-    <script>
-        
-        document.querySelector('.submit').addEventListener('click', function(event) {
-            var form = document.getElementById('contactForm');
-            var isValid = form.checkValidity();
-            if (isValid) {
-                var email = document.getElementById('email').value;
-                if (email.trim() === '') {
-                    alert("Por favor, ingrese su correo electrónico.");
-                } else {
-                    alert("¡Felicidades! Todos los datos serán enviados a su correo electrónico a la brevedad.");
-                }
-            } else {
-                alert("Por favor, complete todos los campos obligatorios.");
-            }
-            event.preventDefault();
-        });
-    
-    </script>
+
+                                                               <!-- JAVASCRIPT -->
+
+<script src="/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
