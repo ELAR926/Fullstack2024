@@ -326,7 +326,7 @@ img{
     box-sizing: border-box;
   }
 
-  .titloh2{
+  .tituloh2{
     padding: 0;
     margin: 0;
     scrollbar-width: 10px;
@@ -481,6 +481,64 @@ footer {
   padding: 6px 22px;
   justify-content: space-between;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* NOVEDADES */
+main {
+  margin-top: 150px; 
+}
+
+.novedades-caminatas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.novedades-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+}
+
+.novedades-div h2 {
+  margin-bottom: 20px;
+}
+
+.novedades-div img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.novedades-div p {
+  text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
