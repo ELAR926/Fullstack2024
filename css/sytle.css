@@ -122,11 +122,6 @@ h1 {
     display: block; 
   }
 
- 
-  .img-reserva{
-    padding-top: 150px ;
-  }
-
   .nav{
     opacity: 0;
     visibility: hidden;
@@ -493,6 +488,22 @@ footer {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* NOVEDADES */
 main {
   margin-top: 150px; 
@@ -686,6 +697,156 @@ select {
   cursor: pointer;
 }
 
+
+
+@media only screen and (max-width: 480px) {
+
+  .form-reserva {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  form {
+    display: grid;
+    padding: 20px 25px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    text-align: center;
+    width: 280px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .cnt {
+    color: #283629;
+    font-size: 28px;
+  }
+
+  label {
+    color: #283629;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  input,
+  textarea {
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    background-color: #edfff0;
+    border: 2px solid #f0faf1;
+    color: #283629;
+    outline: none;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: #b5cab6;
+  }
+
+  .form-txt {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .form-txt a {
+    color: #76b28e;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .submit {
+    font-size: 14px;
+    color: #ffffff;
+    border: 0;
+    border-radius: 20px;
+    background-color: #51d94c;
+    box-shadow: 0 0 15px rgba(25, 254, 0, 0.4);
+  }
+
+  .submit:hover {
+    background-color: #50e04b;
+  }
+
+  .boton {
+    background-color: rgba(25, 254, 0, 0.4);
+    cursor: pointer;
+  }
+
+  .input-group1 {
+    display: grid;
+    grid-template-rows: 200px 70px;
+  }
+
+  .input-group1 label {
+    color: #283629;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .input-group input[type="radio"] {
+    margin-top: 4px;
+  }
+
+  .select-container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-family: Rubik, sans-serif;
+    font-weight: 600;
+    position: relative;
+    min-width: 220px;
+    height: 45px;
+  }
+
+  select {
+    border: none;
+    appearance: none;
+    padding: 0 20px 0 10px;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    border-radius: 20px;
+    outline: none;
+    color: #283629;
+    background-color: #d9eedb;
+    font-size: 14px;
+  }
+
+  .select-container .icon-container {
+    width: 45px;
+    height: 100%;
+    background-color: white;
+  }
+
+  .icon-container {
+    font-size: 25px;
+    color: black;
+  }
+
+  .edad {
+    cursor: pointer;
+  }
+}
+
+
+
+
+
+
+
 @media (max-width: 991px) {
   .centered {
     flex-direction: column;
@@ -720,5 +881,117 @@ select {
   form {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* RESERVAS */
+
+main {
+  margin-top: 150px;
+}
+
+.form-reserva {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  padding: 40px 45px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  width: 340px;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+input,
+textarea {
+  padding: 17px 25px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  background-color: #edfff0;
+  border: 2px solid #f0faf1;
+  color: #283629;
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #b5cab6;
+}
+
+.submit {
+  font-size: 16px;
+  color: #ffffff;
+  border: 0;
+  border-radius: 25px;
+  background-color: #51d94c;
+  box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+}
+
+.submit:hover {
+  background-color: #50e04b;
+}
+
+.boton {
+  background-color: rgba(25, 254, 0, 0.4);
+  cursor: pointer;
+}
+
+#authMessage {
+  color: red;
+  margin-top: 15px;
+}
+
+
+@media only screen and (max-width: 480px) {
+  .form-reserva {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form {
+    display: grid;
+    padding: 20px 25px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    text-align: center;
+    width: 280px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  input,
+  textarea {
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+  }
+
+  .submit {
+    font-size: 14px;
+    border-radius: 20px;
+  }
+
+  .boton {
+    background-color: rgba(25, 254, 0, 0.4);
   }
 }
