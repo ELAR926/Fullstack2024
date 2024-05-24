@@ -5,117 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Actividades</title>
-    <link rel="stylesheet" href="../css/sytle.css" />
-    <link rel="icon" href="../Recursos/favicon/favicon.ico" />
-  </head>
-  <body>
-    <header>
-      <div id="Logo">
-        <img
-          src="../Recursos/Img/logo.png"
-          alt="Imagen de logo"
-          width="100px"
-          width="100px"
-        />
-      </div>
-      <h1>ACTIVIDADES</h1>
-    </header>
+    <link rel="stylesheet" href="../css/sytle.css">
+    <link rel="icon" href="../Recursos/favicon/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></head>
 
-    <nav class="barra-button">
-      <ul class="barra-button1">
-        <div>
-          <li><a class="button" href="index.html">Inicio</a></li>
-        </div>
-        <div>
-          <li><a class="button" href="novedades.html">Novedades</a></li>
-        </div>
-        <div>
-          <li><a class="button" href="actividades.html">Actividades</a></li>
-        </div>
-        <div>
-          <li><a class="button" href="alojamiento.html">Alojamiento</a></li>
-        </div>
-        <div>
-          <li><a class="button" href="contacto.html">Contacto</a></li>
-        </div>
-        <div>
-          <li><a class="button" href="reservas.html">Reservas</a></li>
-        </div>
+</head>
+<body>
+  
+  <header>
+    <div class="Logo">
+      <img src="../Recursos/Img/logo.png" alt="Imagen de logo" width="100px" height="100px">
+      
+    </div>
+    
+
+    <h1>ACTIVIDADES"</h1>
+
+    <button id="abrir" class="menu-icon">
+      <i style="width: 100px; height: 100px;" class="bi bi-justify"></i>
+    </button>
+
+    <nav class="nav" id="nav">
+      <button id="cerrar">cerrar</button>
+      <ul class="nav-list">
+        <li><a class="btn" id= "btn2" href="index.html">Inicio</a></li>
+        <li><a class="btn" id= "btn2" href="novedades.html">Novedades</a></li>
+        <li><a class="btn" id= "btn2" href="actividades.html">Actividades</a></li>
+        <li><a class="btn" id= "btn2" href="alojamiento.html">Alojamiento</a></li>
+        <li><a class="btn" id= "btn2" href="contacto.html">Contacto</a></li>
+        <li><a class="btn" id= "btn2" href="reservas.html">Reservas</a></li>
       </ul>
     </nav>
+  </header>
 
     <main>
-      <section class="seccion1">
-        <article>
-          <h3>Actividades recreativas dentro de la reserva</h3>
-          <p>
-            Las actividades programadas se realizan sábados y domingos, con una
-            agenda variable entre: Yoga para todas las edades, meditación,
-            espectáculos musicales, teatrales, narraciones, encuentros en
-            armonía con la naturaleza, ciclismo y actividades deportivas,
-            caminatas guiadas, feria de artesanías, y clases de tango.
-          </p>
-        </article>
-      </section>
-      <section class="seccion1">
-        <article>
-          <h3>Senderismo</h3>
-          <p>
-            A través de una caminata por los senderos internos de la reserva, se
-            invita a abrir los sentidos de la percepción y acercarnos al gesto
-            de escuchar los mensajes que el Bosque nos da.
-          </p>
-          <br />
-          <p>
-            El senderismo ofrece una amplia gama de beneficios tanto físicos
-            como mentales. En primer lugar, es una excelente forma de ejercicio
-            aeróbico que fortalece el corazón, los músculos y mejora la
-            resistencia cardiovascular. Además, al practicarlo al aire libre,
-            proporciona una dosis de vitamina D y reduce el estrés gracias al
-            contacto con la naturaleza. Promueve la pérdida de peso y mejora la
-            salud ósea al caminar en terrenos diversos. A nivel mental, el
-            senderismo favorece la claridad mental, reduce la ansiedad y la
-            depresión, y aumenta la autoestima. También fomenta el compañerismo
-            al compartir la experiencia con otros entusiastas del senderismo. En
-            resumen, el senderismo es una actividad completa que beneficia tanto
-            al cuerpo como a la mente.
-          </p>
-        </article>
-        <article>
-          <img
-            src="../Recursos/img/sendero.jpg"
-            alt="cartel sendero"
-            height="300"
-          />
-        </article>
-      </section>
-      <section class="seccion1">
-        <article>
-          <h3>Paseo Costero</h3>
-          <p>
-            El paseo costero del lago San Francisco, el espejo de agua de la
-            reserva natural Los Robles, se realizó como parte de una
-            revalorización del lugar. En los alrededores del espejo de agua, que
-            se comparte con los distritos de Merlo, Marcos Paz y General
-            Rodriguez, entre los animales que se pueden avistar abundan las aves
-            de humedales como espátula rosada, chajá, cisne de cuello negro
-            entre otras de las muchas especies que se registran en la zona. En
-            el caso del paseo costero, como en otras visitas guiadas, se apunta
-            también a concientizar sobre el cuidado y el respeto por el área
-            natural. A las orillas de las más de 400 hectáreas del lago se puede
-            apreciar una variedad de aves y anfibios, así como la diversidad de
-            la flora autóctona del lugar. Un paisaje privilegiado a menos de una
-            hora de la Ciudad de Buenos Aires.
-          </p>
-        </article>
-        <article>
-          <img
-            src="../Recursos/img/paseo_espejo_agua.jpg"
-            alt="Espejo de agua"
-            height="300px"
-          />
-        </article>
-      </section>
+        <section class="novedades-caminatas">
+            <article class="novedades-div">
+                <h3>Actividades recreativas dentro de la reserva</h3>
+                <p>Las actividades programadas se realizan sábados y domingos, con una agenda variable entre: Yoga para todas las edades, meditación, espectáculos musicales, teatrales, narraciones, encuentros en armonía con la naturaleza, ciclismo y actividades deportivas, caminatas guiadas, feria de artesanías, y clases de tango.</p>
+            </article>
+            
+        </section>
+        <section class="novedades-caminatas">
+            <article class="novedades-div">
+                <h3>Senderismo</h3>
+                <p>A través de una caminata por los senderos internos de la reserva, se
+                    invita a abrir los sentidos de la percepción y acercarnos al gesto de
+                    escuchar los mensajes que el Bosque nos da.</p>
+                <br>
+                <p>El senderismo ofrece una amplia gama de beneficios tanto físicos como mentales. En primer lugar, es una excelente forma de ejercicio aeróbico que fortalece el corazón,
+                     los músculos y mejora la resistencia cardiovascular. Además, al practicarlo al aire libre, proporciona una dosis de vitamina D y reduce el estrés gracias al contacto con la naturaleza. Promueve la pérdida de peso y mejora la salud ósea al caminar en terrenos diversos. A nivel mental, el senderismo favorece la claridad mental, reduce la ansiedad y la depresión, y aumenta la autoestima. También fomenta el compañerismo al compartir la experiencia con otros entusiastas del senderismo. En resumen, el senderismo es una actividad completa que beneficia tanto al cuerpo como a la mente.</p>
+            </article>
+            <article class="novedades-div">
+                <img src="../Recursos/img/sendero.jpg" alt="cartel sendero" height="300">
+            </article>
+        </section>
+        <section class="novedades-caminatas">
+            <article class="novedades-div">
+                <h3>Paseo Costero</h3>
+                <p>
+                    El paseo costero del lago San Francisco, el espejo de agua de la reserva natural Los Robles, se realizó como parte de una revalorización del
+                    lugar. En los alrededores del espejo de agua, que se comparte con los distritos de Merlo, Marcos Paz y General Rodriguez, entre los animales
+                    que se pueden avistar abundan las aves de humedales como espátula rosada, chajá, cisne de cuello negro entre otras de las muchas especies
+                    que se registran en la zona. En el caso del paseo costero, como en otras visitas guiadas, se apunta también a concientizar sobre el cuidado y el
+                    respeto por el área natural. A las orillas de las más de 400 hectáreas del lago se puede apreciar una variedad de aves y anfibios, así como la
+                    diversidad de la flora autóctona del lugar. Un paisaje privilegiado a menos de una hora de la Ciudad de Buenos Aires.
+                </p>
+            </article>
+            <article class="novedades-div">
+                <img src="../Recursos/img/paseo_espejo_agua.jpg" alt="Espejo de agua" height="300px">
+            </article>
+        </section>
+
     </main>
 
     <br />
@@ -179,5 +140,7 @@
         <hr />
       </div>
     </footer>
+    <script src="/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
