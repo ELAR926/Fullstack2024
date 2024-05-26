@@ -28,6 +28,7 @@ header {
   flex-wrap: wrap;
   position: fixed;
   background-color: #96cca8;
+  background: linear-gradient(100deg, #96CCA8, #D9EEDB);
   justify-content: space-between;
   align-items: center;
   width: 100vw;
