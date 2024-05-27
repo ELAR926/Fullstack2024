@@ -35,7 +35,7 @@ function toggleText(){
 
     }
     else{
-        hideText_btn.innerHTML = 'Ver Mas';
+        hideText_btn.innerHTML = 'Mas fotos';
     }
 }
 

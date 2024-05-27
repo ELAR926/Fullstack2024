@@ -402,9 +402,9 @@ img {
   text-align: center;
   font-size: 1.7em;
   border-radius: 20px;
-  color: crimson;
-  border: 1px solid crimson;
-  background-color: white;
+  color: #283629;
+  border: 1px solid #76b28e;
+  background-color: #D9EEDB;
   margin-top: 110px;
   margin-bottom: 30px;
   margin-left: 600px;
@@ -413,8 +413,8 @@ img {
 }
 
 .readMore_btn:hover {
-  background-color: rgb(198, 17, 53);
-  color: white;
+  background-color: #76b28e;
+  color: #edfff0;
 }
 
 .mapa {
