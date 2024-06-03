@@ -1,14 +1,11 @@
-/* Fuente descargada de Google fonts */
 @font-face {
   font-family: Rubik;
   src: url(../Recursos/fonts/Rubik/static/Rubik-Regular.ttf);
 }
-
 * {
   margin: 0;
   padding: 0;
 }
-
 html,
 body {
   scroll-behavior: smooth;
@@ -20,9 +17,6 @@ body {
   height: 100%;
   overflow-x: hidden;
 }
-
-/* INICIO */
-
 header {
   display: flex;
   flex-wrap: wrap;
@@ -35,19 +29,16 @@ header {
   z-index: 1000;
   box-sizing: border-box;
 }
-
 .logo {
   opacity: 1;
   transition: opacity 0.3s ease;
 }
-
 h1 {
   margin: 0;
   font-size: 1.5rem;
   text-align: center;
   flex-grow: 1;
 }
-
 .btn {
   background-color: #fff9e6;
   margin-right: 10px;
@@ -58,26 +49,21 @@ h1 {
   border-top-left-radius: 13px;
   transition: 0.2s all;
 }
-
 .btn:hover {
   background-color: #96cca8;
   color: #fff9e6;
 }
-
 #cerrar {
   display: none;
   margin-top: 100px;
 }
-
 .barra {
   box-sizing: border-box;
 }
-
 .barra2 {
   overflow: hidden;
   box-sizing: border-box;
 }
-
 .nav {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -85,34 +71,28 @@ h1 {
   padding-bottom: 0px;
   width: 100vw;
 }
-
 .nav-list {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   padding: 0;
   margin: 0;
 }
-
 .nav .nav-list {
   list-style-type: none;
   display: flex;
 }
-
 .nav .nav-list li a {
   display: inline-block;
   padding: 10px;
 }
-
 .menu-icon {
   display: none;
 }
-
 @media screen and (max-width: 480px) {
   .menu-icon,
   .cerrar-menuy {
     display: block;
   }
-
   .nav {
     opacity: 0;
     visibility: hidden;
@@ -141,12 +121,10 @@ h1 {
     transition: 0.2s all;
     display: block;
   }
-
   #cerrar:hover {
     background-color: #96cca8;
     color: #fff9e6;
   }
-
   #btn2 {
     background-color: #96cca8;
     margin-right: 0;
@@ -157,12 +135,10 @@ h1 {
     border-top-left-radius: 0px;
     transition: 0.2s all;
   }
-
   #btn2:hover {
     background-color: #96cca8;
     color: #fff9e6;
   }
-
   .nav.visible {
     opacity: 1;
     visibility: visible;
@@ -175,7 +151,6 @@ h1 {
     color: white;
   }
 }
-
 main {
   padding: 0;
   margin: 0;
@@ -183,9 +158,8 @@ main {
   overflow: hidden;
   width: 100vw;
   box-sizing: border-box;
-  background-color: white;
+  background-color: #FFFEF1;
 }
-
 .contenedor2 {
   display: grid;
   grid-template-columns: 200px auto 200px;
@@ -199,12 +173,12 @@ main {
   align-items: center;
   grid-area: 1 / 2;
   height: 100px;
-  background-color: white;
+  background-color: #FFFEF1;
   box-sizing: border-box;
+  border-radius: 3px;
 }
-
+/*
 h2 {
-  font-family: "Montserrat", sans-serif;
   font-weight: 125;
   font-style: normal;
   font-size: 3em;
@@ -217,7 +191,7 @@ h2 {
   font-weight: normal;
   font-style: normal;
   box-sizing: border-box;
-}
+}*/
 
 .contenedor3 {
   display: grid;
@@ -252,7 +226,7 @@ h2 {
 
 .contenido3 img {
   width: 100%;
-  transition: transform 0.5s ease; /* Transición suave */
+  transition: transform 0.5s ease; 
 }
 
 .contenido3 img:not(:first-child) {
@@ -315,7 +289,7 @@ img {
 .eventos img {
   width: 100%;
 }
-/* CARTA DE NOVEDADES */
+
 .novedades a {
   width: 100%;
   padding: 16px;
@@ -381,7 +355,7 @@ img {
 
   .espacio2 {
     display: grid;
-    place-items: center; /* Modificar place-content por place-items */
+    place-items: center; 
     width: 100%;
     height: 500px;
     box-sizing: border-box;
@@ -393,7 +367,6 @@ img {
   }
 }
 
-/* show es parte de javascript */
 .show {
   display: block;
 }
@@ -450,7 +423,7 @@ iframe {
   text-align: center;
 }
 
-/* media query */
+
 @media only screen and (min-width: 600px) {
   header,
   footer,
@@ -521,7 +494,6 @@ footer {
   justify-content: space-between;
 }
 
-/* NOVEDADES */
 main {
   margin-top: 150px;
 }
@@ -556,8 +528,6 @@ main {
 .novedades-div p {
   text-align: justify;
 }
-
-/* CONTACT FORMULARIO */
 
 .form-reserva {
   display: grid;
@@ -628,12 +598,12 @@ textarea::placeholder {
   color: #ffffff;
   border: 0;
   border-radius: 25px;
-  background-color: #51d94c;
+  background-color: #C5EDC8;
   box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
 }
 
 .submit:hover {
-  background-color: #50e04b;
+  background-color: #C5EDC8;
 }
 
 .boton {
@@ -664,7 +634,7 @@ textarea::placeholder {
   font-family: Rubik, sans-serif;
   font-weight: 600;
   position: relative;
-  min-width: 250px;
+  min-width: 150px;
   height: 50px;
 }
 
@@ -768,7 +738,7 @@ select {
     color: #ffffff;
     border: 0;
     border-radius: 20px;
-    background-color: #51d94c;
+    background-color: #C5EDC8;
     box-shadow: 0 0 15px rgba(25, 254, 0, 0.4);
   }
 
@@ -875,8 +845,6 @@ select {
   }
 }
 
-/* RESERVAS */
-
 main {
   margin-top: 150px;
 }
@@ -974,4 +942,32 @@ textarea::placeholder {
   .boton {
     background-color: rgba(25, 254, 0, 0.4);
   }
+}
+.weather {
+  margin-top: 10px;
+  width: 40%;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 70px 20px;
+  box-sizing: border-box;
+  display:flex;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  opacity: 0.9;
+}
+#weather-data {
+  margin-top: 20px;
+  width: 40%;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 70px 20px;
+  box-sizing: border-box;
+  display:flex;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  opacity: 0.9;
 }

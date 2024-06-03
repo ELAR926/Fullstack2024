@@ -1,6 +1,4 @@
 
-// HEADER
-
 const nav = document.querySelector("#nav");
 const abrir = document.querySelector("#abrir");
 const cerrar = document.querySelector("#cerrar");
@@ -12,13 +10,6 @@ abrir.addEventListener("click", () => {
 cerrar.addEventListener("click", () => {
     nav.classList.remove("visible"); 
 });
-
-
-
-
-
-
-
 
 //"Ver Mas" en pagina del inicio
 let hideText_btn = document.getElementById('hideText_btn');
@@ -39,10 +30,6 @@ function toggleText(){
     }
 }
 
-
-
-
-
  // VALIDACION DEL FORMULARIO
 
 document.querySelector('.submit').addEventListener('click', function(event) {
@@ -60,11 +47,6 @@ document.querySelector('.submit').addEventListener('click', function(event) {
     }
     event.preventDefault();
 });
-
-
-
-
-//API
 
 fetch("https://hp-api.onrender.com/api/characters")
 .then(response => response.json())
