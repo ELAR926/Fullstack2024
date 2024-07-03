@@ -88,69 +88,7 @@ h1 {
 .menu-icon {
   display: none;
 }
-@media screen and (max-width: 480px) {
-  .menu-icon,
-  .cerrar-menuy {
-    display: block;
-  }
-  .nav {
-    opacity: 0;
-    visibility: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    gap: 1rem;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 100px;
-    height: 1000px;
-    background-color: #96cca8;
-    padding: 2rem;
-    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
-  }
-  #cerrar {
-    background-color: #96cca8;
-    margin-right: 0;
-    text-decoration: none;
-    color: black;
-    border-radius: 0px;
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
-    transition: 0.2s all;
-    display: block;
-  }
-  #cerrar:hover {
-    background-color: #96cca8;
-    color: #fff9e6;
-  }
-  #btn2 {
-    background-color: #96cca8;
-    margin-right: 0;
-    text-decoration: none;
-    color: black;
-    border-radius: 0px;
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
-    transition: 0.2s all;
-  }
-  #btn2:hover {
-    background-color: #96cca8;
-    color: #fff9e6;
-  }
-  .nav.visible {
-    opacity: 1;
-    visibility: visible;
-  }
-  .nav-list {
-    align-items: end;
-    flex-direction: column;
-  }
-  .nav-list li a {
-    color: white;
-  }
-}
+
 main {
   padding: 0;
   margin: 0;
@@ -239,7 +177,9 @@ p {
 }
 
 .imagen {
-  border: 1px solid #ccc;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding-top: 50px;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease;
   box-sizing: border-box;
@@ -337,10 +277,30 @@ img {
     padding: 0;
   }
 
+  .contenedor3{
+
+  }
+  .espacio1{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-left: 40px;
+  margin-bottom: 50px;
+  padding-right: 45px;
+  box-sizing: border-box;
+    
+  }
   img {
     margin-top: 0;
     box-sizing: border-box;
   }
+  .imagen{
+    margin: 0;
+    padding: 50px 50px 50px 50px;
+
+  }
+  
 
   .tituloh2 {
     padding: 0;
@@ -494,9 +454,7 @@ footer {
   justify-content: space-between;
 }
 
-main {
-  margin-top: 150px;
-}
+
 
 .novedades-caminatas {
   display: flex;
@@ -532,6 +490,7 @@ main {
 .form-reserva {
   display: grid;
   grid-template-columns: 1fr;
+  margin-top: 80px;
 }
 form {
   display: grid;
@@ -666,6 +625,121 @@ select {
 .edad {
   cursor: pointer;
 }
+
+.weather {
+  margin-top: 10px;
+  width: 40%;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 70px 20px;
+  box-sizing: border-box;
+  display:flex;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  opacity: 0.9;
+}
+#weather-data {
+  margin-top: 20px;
+  width: 40%;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 70px 20px;
+  box-sizing: border-box;
+  display:flex;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+  .menu-icon,
+  .cerrar-menuy {
+    display: block;
+  }
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 1000px;
+    background-color: #96cca8;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  }
+  #cerrar {
+    background-color: #96cca8;
+    margin-right: 0;
+    text-decoration: none;
+    color: black;
+    border-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    transition: 0.2s all;
+    display: block;
+  }
+  #cerrar:hover {
+    background-color: #96cca8;
+    color: #fff9e6;
+  }
+  #btn2 {
+    background-color: #96cca8;
+    margin-right: 0;
+    text-decoration: none;
+    color: black;
+    border-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    transition: 0.2s all;
+  }
+  #btn2:hover {
+    background-color: #96cca8;
+    color: #fff9e6;
+  }
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav-list {
+    align-items: end;
+    flex-direction: column;
+  }
+  .nav-list li a {
+    color: white;
+  }
+}
+
+
 
 @media only screen and (max-width: 480px) {
   .form-reserva {
@@ -806,7 +880,48 @@ select {
   .edad {
     cursor: pointer;
   }
+  .form-reserva {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form {
+    display: grid;
+    padding: 20px 25px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    text-align: center;
+    width: 280px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  input,
+  textarea {
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+  }
+
+  .submit {
+    font-size: 14px;
+    border-radius: 20px;
+  }
+
+  .boton {
+    background-color: rgba(25, 254, 0, 0.4);
+  }
 }
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 991px) {
   .centered {
@@ -835,8 +950,9 @@ select {
   }
 
   .readMore_btn {
+    margin-top: 0;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 80px;
   }
 
   form {
@@ -845,9 +961,6 @@ select {
   }
 }
 
-main {
-  margin-top: 150px;
-}
 
 .form-reserva {
   display: flex;
@@ -909,65 +1022,3 @@ textarea::placeholder {
   margin-top: 15px;
 }
 
-@media only screen and (max-width: 480px) {
-  .form-reserva {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  form {
-    display: grid;
-    padding: 20px 25px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    text-align: center;
-    width: 280px;
-    margin-top: 100px;
-    margin-bottom: 50px;
-  }
-
-  input,
-  textarea {
-    padding: 15px 20px;
-    border-radius: 20px;
-    margin-bottom: 15px;
-  }
-
-  .submit {
-    font-size: 14px;
-    border-radius: 20px;
-  }
-
-  .boton {
-    background-color: rgba(25, 254, 0, 0.4);
-  }
-}
-.weather {
-  margin-top: 10px;
-  width: 40%;
-  margin: auto;
-  border: 1px solid #ccc;
-  border-radius: 30px;
-  padding: 70px 20px;
-  box-sizing: border-box;
-  display:flex;
-  align-items: center;
-  text-align: center;
-  background-color: white;
-  opacity: 0.9;
-}
-#weather-data {
-  margin-top: 20px;
-  width: 40%;
-  margin: auto;
-  border: 1px solid #ccc;
-  border-radius: 30px;
-  padding: 70px 20px;
-  box-sizing: border-box;
-  display:flex;
-  align-items: center;
-  text-align: center;
-  background-color: white;
-  opacity: 0.9;
-}
