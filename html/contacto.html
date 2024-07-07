@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Los Robles - Contacto</title>
+    <link rel="stylesheet" href="../css/sytle.css">
+    <link rel="icon" href="../Recursos/favicon/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>  
+  <header>
+    <div class="Logo">
+      <img src="../Recursos/Img/logo_1.png" alt="Imagen de logo" width="100px" height="100px">
+    </div>
+    <h1>CONTACTO</h1>
+    <button id="abrir" class="menu-icon">
+      <i style="width: 100px; height: 100px;" class="bi bi-justify"></i>
+    </button>
+    <nav class="nav" id="nav">
+      <button id="cerrar">cerrar</button>
+      <ul class="nav-list">
+        <li><a class="btn" id= "btn2" href="../index.html">Inicio</a></li>
+        <li><a class="btn" id= "btn2" href="novedades.html">Novedades</a></li>
+        <li><a class="btn" id= "btn2" href="actividades.html">Actividades</a></li>
+        <li><a class="btn" id= "btn2" href="alojamiento.html">Alojamiento</a></li>
+        <li><a class="btn" id= "btn2" href="contacto.html">Contacto</a></li>
+        <li><a class="btn" id= "btn2" href="reservas.html">Reservas</a></li>
+      </ul>
+    </nav>
+  </header>
+      
+  <main>
+    <section class="form-reserva">
+        <form id="contactForm">
+          <h2 class="cnt"> Contacto</h2>
+            <div class="input-group">
+              <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="Nombre" required>      
+                    <label for="phone">Telefono</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Telefono">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <br>
+                    <br>
+                    <div class="input-group1">
+                        <section>
+                            <h4>Ingrese Su Genero:</h4>
+                            <br>
+                            <label for="Genero">Hombre</label>
+                            <div class="radio-group">
+                                <input type="radio" id="hombre" name="Genero">
+                            </div>
+                            <label for="Genero">Mujer</label>
+                            <div class="radio-group">
+                                <input type="radio" id="mujer" name="Genero">
+                            </div>
+                            <label for="Genero">Otro</label>
+                            <div class="radio-group">
+                                <input type="radio" id="otro" name="Genero">
+                            </div>
+                        </section>
+                        <section class="select-container">  
+                            <select class="edad" name="Edad" id="Edad">
+                                <option value="Opcion0">Seleccione Su Edad</option>
+                                <option value="Opcion1">18 </option>
+                                <option value="Opcion2">19 </option>
+                                <option value="Opcion3">20 </option>
+                                <option value="Opcion4">21 </option>
+                                <option value="Opcion5">22 </option>
+                                <option value="Opcion6">23 </option>
+                                <option value="Opcion7">24 </option>
+                                <option value="Opcion8">25 </option>
+                                <option value="Opcion9">26 </option>
+                                <option value="Opcion10">27 </option>
+                                <option value="Opcion11">28 </option>
+                                <option value="Opcion12">29 </option>
+                                <option value="Opcion13">30 </option>
+                                <option value="Opcion14">31 </option>
+                                <option value="Opcion15">32 </option>
+                                <option value="Opcion16">33 </option>
+                                <option value="Opcion17">34 </option>
+                                <option value="Opcion18">35 </option>
+                                <option value="Opcion19">36 </option>
+                                <option value="Opcion20">37 </option>
+                                <option value="Opcion10">38 </option>
+                                <option value="Opcion11">39 </option>
+                                <option value="Opcion12">40 </option>
+                                <option value="Opcion13">41 </option>
+                                <option value="Opcion14">42 </option>
+                                <option value="Opcion15">43 </option>
+                                <option value="Opcion16">44 </option>
+                                <option value="Opcion17">45 </option>
+                                <option value="Opcion18">46 </option>
+                                <option value="Opcion19">47 </option>
+                                <option value="Opcion20">48 </option>
+                                <option value="Opcion10">49 </option>
+                                <option value="Opcion11">50 </option>
+                                <option value="Opcion12">51 </option>
+                                <option value="Opcion13">52 </option>
+                                <option value="Opcion14">53 </option>
+                                <option value="Opcion15">54 </option>
+                                <option value="Opcion16">55 </option>
+                                <option value="Opcion17">56 </option>
+                                <option value="Opcion18">57 </option>
+                                <option value="Opcion19">58 </option>
+                                <option value="Opcion20">59 </option>
+                                <option value="Opcion10">60 o más</option>
+                            </select>
+                        </section>
+                    </div>
+                    <br>
+                    <br>
+                    <label for="message">Mensaje</label>
+                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
+        
+                    <div class="form-txt">
+                        <a href="#">Politica de privacidad</a>
+                        <a href="#">Terminos y condiciones</a>
+                    </div>
+
+                    <div class="form-check mb-3">
+                        <label class="form-check-label" for="copiacorreo">Quiero recibir una copia del mensaje en mi correo electrónico</label>
+                        <input class="form-check-input" type="checkbox" value="" id="copiacorreo" name="copiacorreo">
+                    
+
+                    <input class="boton submit" type="submit" onclick="return enviarFormulario()" value="Enviar">
+        
+    </main>
+    <footer>
+      <div class="redes">
+        <a href="https://www.facebook.com/losroblesmoreno/" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 512 512">
+            <path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/>
+          </svg>
+        </a>
+        <a href="mailto:barros_ingrid@hotmail.com">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 512 512">
+            <path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/reservamunicipallosrobles/" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" width="22.25" viewBox="0 0 448 512">
+            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+          </svg>
+        </a>
+      </div>
+      <div class="animationContainer">
+        <h1>Los esperamos</h1>
+      </div>
+      <div class="final">
+        <hr />
+        <p class="centered">Derechos reservados Codo a Codo 2024</p>
+        <hr />
+      </div>
+    </footer>
+
+    
+
+
+
+
+                                                               <!-- JAVASCRIPT -->
+<script>
+  document.querySelector('.submit').addEventListener('click', function(event) {
+    var form = document.getElementById('contactForm');
+    var isValid = form.checkValidity();
+    if (isValid) {
+        var email = document.getElementById('email').value;
+        if (email.trim() === '') {
+            alert("Por favor, ingrese su correo electrónico.");
+        } else {
+            alert("¡Felicidades! Todos los datos serán enviados a su correo electrónico a la brevedad.");
+        }
+    } else {
+        alert("Por favor, complete todos los campos obligatorios.");
+    }
+    event.preventDefault();
+});
+</script>
+
+<script src="/script.js"></script>
+</body>
+</html>
