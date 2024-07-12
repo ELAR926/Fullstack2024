@@ -2,6 +2,7 @@
 
 from app.database import get_db
 
+
 class Task:
     @staticmethod
     def _get_tasks_by_query(query, params=None):
@@ -43,7 +44,8 @@ class Task:
             """
         db = get_db()
         cursor = db.cursor()
-        cursor.execute(query, (nombre, apellido, email, fecha_entrada, fecha_salida))
+        cursor.execute(query, (nombre, apellido, email,
+                       fecha_entrada, fecha_salida))
         db.commit()
         inserted_id = cursor.fetchone()[0]
         return inserted_id
@@ -90,8 +92,10 @@ class Task:
             'nombre': task['nombre'],
             'apellido': task['apellido'],
             'email': task['email'],
-            'fecha_entrada': task['fecha_entrada'].isoformat(),  # Formato ISO 8601 para fechas
-            'fecha_salida': task['fecha_salida'].isoformat(),    # Formato ISO 8601 para fechas
+            # Formato ISO 8601 para fechas
+            'fecha_entrada': task['fecha_entrada'].isoformat(),
+            # Formato ISO 8601 para fechas
+            'fecha_salida': task['fecha_salida'].isoformat(),
             'completada': task['completada'],
             'activa': task['activa']
         }

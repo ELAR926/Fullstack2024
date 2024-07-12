@@ -22,7 +22,7 @@ header {
   flex-wrap: wrap;
   position: fixed;
   background-color: #96cca8;
-  background: linear-gradient(100deg, #96CCA8, #D9EEDB);
+  background: linear-gradient(100deg, #96cca8, #d9eedb);
   justify-content: space-between;
   align-items: center;
   width: 100vw;
@@ -96,7 +96,7 @@ main {
   overflow: hidden;
   width: 100vw;
   box-sizing: border-box;
-  background-color: #FFFEF1;
+  background-color: #fffef1;
 }
 .contenedor2 {
   display: grid;
@@ -111,7 +111,7 @@ main {
   align-items: center;
   grid-area: 1 / 2;
   height: 100px;
-  background-color: #FFFEF1;
+  background-color: #fffef1;
   box-sizing: border-box;
   border-radius: 3px;
 }
@@ -164,7 +164,7 @@ h2 {
 
 .contenido3 img {
   width: 100%;
-  transition: transform 0.5s ease; 
+  transition: transform 0.5s ease;
 }
 
 .contenido3 img:not(:first-child) {
@@ -276,32 +276,47 @@ img {
     grid-template-columns: 1fr;
     padding: 0;
   }
-
-  .contenedor3{
-
+  .eventos {
+    width: calc(100% - 16px);
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
   }
-  .espacio1{
+
+  .eventos a {
+    height: 250px;
+    width: auto;
+  }
+  .eventos a img {
+    height: 80%;
+  }
+  .con.hijo2 {
+    height: auto;
+    padding: 24px;
+  }
+  .contenedor3 {
+  }
+  .espacio1 {
     display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80%;
-  margin-left: 40px;
-  margin-bottom: 50px;
-  padding-right: 45px;
-  box-sizing: border-box;
-    
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-left: 40px;
+    margin-bottom: 50px;
+    padding-right: 45px;
+    box-sizing: border-box;
   }
   img {
     margin-top: 0;
     box-sizing: border-box;
   }
-  .imagen{
+  .imagen {
     margin: 0;
     padding: 50px 50px 50px 50px;
-
   }
-  
-
+  .imagen img {
+    height: 300px;
+  }
   .tituloh2 {
     padding: 0;
     margin: 0;
@@ -315,7 +330,7 @@ img {
 
   .espacio2 {
     display: grid;
-    place-items: center; 
+    place-items: center;
     width: 100%;
     height: 500px;
     box-sizing: border-box;
@@ -337,7 +352,7 @@ img {
   border-radius: 20px;
   color: #283629;
   border: 1px solid #76b28e;
-  background-color: #D9EEDB;
+  background-color: #d9eedb;
   margin-top: 110px;
   margin-bottom: 30px;
   margin-left: 600px;
@@ -382,7 +397,6 @@ iframe {
   align-items: center;
   text-align: center;
 }
-
 
 @media only screen and (min-width: 600px) {
   header,
@@ -453,8 +467,6 @@ footer {
   padding: 6px 22px;
   justify-content: space-between;
 }
-
-
 
 .novedades-caminatas {
   display: flex;
@@ -557,12 +569,12 @@ textarea::placeholder {
   color: #ffffff;
   border: 0;
   border-radius: 25px;
-  background-color: #C5EDC8;
+  background-color: #c5edc8;
   box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
 }
 
 .submit:hover {
-  background-color: #C5EDC8;
+  background-color: #c5edc8;
 }
 
 .boton {
@@ -634,7 +646,7 @@ select {
   border-radius: 30px;
   padding: 70px 20px;
   box-sizing: border-box;
-  display:flex;
+  display: flex;
   align-items: center;
   text-align: center;
   background-color: white;
@@ -648,37 +660,24 @@ select {
   border-radius: 30px;
   padding: 70px 20px;
   box-sizing: border-box;
-  display:flex;
+  display: flex;
   align-items: center;
   text-align: center;
   background-color: white;
   opacity: 0.9;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 480px) {
   .menu-icon,
   .cerrar-menuy {
     display: block;
+    padding: 0 4px;
+    margin-right: 8px;
+    background-color: #96cca8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 24px;
   }
   .nav {
     opacity: 0;
@@ -694,6 +693,7 @@ select {
     width: 100px;
     height: 1000px;
     background-color: #96cca8;
+    transition: all 0.5s ease;
     padding: 2rem;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
   }
@@ -701,12 +701,16 @@ select {
     background-color: #96cca8;
     margin-right: 0;
     text-decoration: none;
-    color: black;
-    border-radius: 0px;
+    color: white;
+    border: none;
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
     transition: 0.2s all;
     display: block;
+  }
+  #cerrar::after {
+    content: "X";
+    margin-left: 4px;
   }
   #cerrar:hover {
     background-color: #96cca8;
@@ -738,8 +742,6 @@ select {
     color: white;
   }
 }
-
-
 
 @media only screen and (max-width: 480px) {
   .form-reserva {
@@ -812,7 +814,7 @@ select {
     color: #ffffff;
     border: 0;
     border-radius: 20px;
-    background-color: #C5EDC8;
+    background-color: #c5edc8;
     box-shadow: 0 0 15px rgba(25, 254, 0, 0.4);
   }
 
@@ -914,15 +916,6 @@ select {
   }
 }
 
-
-
-
-
-
-
-
-
-
 @media (max-width: 991px) {
   .centered {
     flex-direction: column;
@@ -960,7 +953,6 @@ select {
     margin-right: auto;
   }
 }
-
 
 .form-reserva {
   display: flex;

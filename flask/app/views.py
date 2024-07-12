@@ -3,6 +3,7 @@
 from flask import jsonify, request
 from app.models import Task
 
+
 def mostrar_formulario():
     try:
         # Obtener las tareas activas y no completadas
@@ -10,6 +11,7 @@ def mostrar_formulario():
         return jsonify([Task.serialize(task) for task in tasks])
     except Exception as e:
         return jsonify({'error': f'Error al obtener las tareas: {str(e)}'}), 500
+
 
 def procesar_formulario():
     # Obtener datos del formulario enviado
