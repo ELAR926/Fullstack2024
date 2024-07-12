@@ -48,9 +48,3 @@ document.querySelector('.submit').addEventListener('click', function(event) {
     event.preventDefault();
 });
 
-fetch("https://hp-api.onrender.com/api/characters")
-.then(response => response.json())
-.then(data =>{
-    console.log(data);
-})
-.catch(error => console.log("Ocurrio un error!"));
