@@ -4,36 +4,50 @@ from app.database import get_db
 
 
 class Task:
+    def __init__(self, id=None, nombre=None, apellido=None, email=None, fecha_entrada=None, fecha_salida=None, completada=None, activa=None):
+        self.id = id
+        self.nombre = nombre
+        self.apellido = apellido
+        self.email = email
+        self.fecha_entrada = fecha_entrada
+        self.fecha_salida = fecha_salida
+        self.completada = completada
+        self.activa = activa
+
     @staticmethod
-    def _get_tasks_by_query(query, params=None):
+    def __get_tasks_by_query(query):
         db = get_db()
         cursor = db.cursor()
-        cursor.execute(query, params)
+        cursor.execute(query)
         rows = cursor.fetchall()
+
         tasks = []
         for row in rows:
-            task = {
-                'id': row[0],
-                'nombre': row[1],
-                'apellido': row[2],
-                'email': row[3],
-                'fecha_entrada': row[4],
-                'fecha_salida': row[5],
-                'completada': row[6],
-                'activa': row[7]
-            }
-            tasks.append(task)
+            tasks.append(
+                Task(
+                    id=row[0],
+                    nombre=row[1],
+                    apellido=row[2],
+                    email=row[3],
+                    fecha_entrada=row[4],
+                    fecha_salida=row[5],
+                    completada=row[6],
+                    activa=row[7]
+                )
+            )
+        cursor.close()
         return tasks
 
     @staticmethod
     def GET_mostrar_formulario():
-        query = """
+        return Task.__get_tasks_by_query(
+            """
             SELECT id, nombre, apellido, email, fecha_entrada, fecha_salida, completada, activa
             FROM reserva
             WHERE activa = true AND completada = false
             ORDER BY fecha_salida
             """
-        return Task._get_tasks_by_query(query)
+        )
 
     @staticmethod
     def POST_procesar_formulario(nombre, apellido, email, fecha_entrada, fecha_salida):
@@ -52,50 +66,65 @@ class Task:
 
     @staticmethod
     def get_by_id(id):
-        query = "SELECT * FROM reserva WHERE id = %s"
         db = get_db()
         cursor = db.cursor()
+        query = "SELECT * FROM reserva WHERE id = %s"
         cursor.execute(query, (id,))
         row = cursor.fetchone()
-        task = {
-            'id': row[0],
-            'nombre': row[1],
-            'apellido': row[2],
-            'email': row[3],
-            'fecha_entrada': row[4],
-            'fecha_salida': row[5],
-            'completada': row[6],
-            'activa': row[7]
-        } if row else None
-        return task
+        cursor.close()
 
-    @staticmethod
-    def marcar_completada(id):
-        query = "UPDATE reserva SET completada = true WHERE id = %s"
+        if row:
+            return Task(
+                id=row[0],
+                nombre=row[1],
+                apellido=row[2],
+                email=row[3],
+                fecha_entrada=row[4],
+                fecha_salida=row[5],
+                completada=row[6],
+                activa=row[7]
+            )
+        return None
+
+    def save(self):
         db = get_db()
         cursor = db.cursor()
-        cursor.execute(query, (id,))
+        if self.id:
+            cursor.execute(
+                """ UPDATE reserva 
+                SET nombre = %s, apellido = %s, email = %s, fecha_entrada = %s, fecha_salida = %s, completada = %s, activa = %s
+                WHERE id = %s
+                """,
+                (self.nombre, self.apellido, self.email, self.fecha_entrada,
+                 self.fecha_salida, self.completada, self.activa, self.id)
+            )
+        else:
+            cursor.execute(
+                """ INSERT INTO reserva (nombre, apellido, email, fecha_entrada, fecha_salida, completada, activa)
+                VALUES(%s, %s, %s, %s, %s, %s, %s)
+                """,
+                (self.nombre, self.apellido, self.email, self.fecha_entrada, self.fecha_salida, self.completada, self.activa))
+            self.id = cursor.lastrowid
         db.commit()
+        cursor.close()
 
-    @staticmethod
-    def delete(id):
+    def delete(self):
+        db = get_db()
+        cursor = db.cursor()
         query = "UPDATE reserva SET activa = false WHERE id = %s"
-        db = get_db()
-        cursor = db.cursor()
-        cursor.execute(query, (id,))
+        cursor.execute(query, (self.id,))
         db.commit()
+        cursor.close()
 
     @staticmethod
     def serialize(task):
         return {
-            'id': task['id'],
-            'nombre': task['nombre'],
-            'apellido': task['apellido'],
-            'email': task['email'],
-            # Formato ISO 8601 para fechas
-            'fecha_entrada': task['fecha_entrada'].isoformat(),
-            # Formato ISO 8601 para fechas
-            'fecha_salida': task['fecha_salida'].isoformat(),
-            'completada': task['completada'],
-            'activa': task['activa']
+            'id': task.id,
+            'nombre': task.nombre,
+            'apellido': task.apellido,
+            'email': task.email,
+            'fecha_entrada': task.fecha_entrada.strftime('%Y-%m-%d %H:%M:%S'),
+            'fecha_salida': task.fecha_salida.strftime('%Y-%m-%d %H:%M:%S'),
+            'completada': task.completada,
+            'activa': task.activa
         }
