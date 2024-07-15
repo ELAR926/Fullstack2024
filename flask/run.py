@@ -8,8 +8,8 @@ from app.database import *
 app = Flask(__name__)
 
 # Definición de funciones de vistas
-app.route('/api/tasks/reservas', methods=['GET'])(mostrar_formulario)
-app.route('/api/tasks/reservas', methods=['POST'])(procesar_formulario)
+app.route('/api/Form/reserva', methods=['GET'])(mostrar_formulario)
+app.route('/api/Form/reserva', methods=['POST'])(procesar_formulario)
 
 # Configuración de la base de datos
 init_app(app)

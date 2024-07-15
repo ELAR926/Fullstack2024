@@ -3,7 +3,7 @@
 from app.database import get_db
 
 
-class Task:
+class Reserva:
     def __init__(self, id=None, nombre=None, apellido=None, email=None, fecha_entrada=None, fecha_salida=None, completada=None, activa=None):
         self.id = id
         self.nombre = nombre
@@ -15,16 +15,16 @@ class Task:
         self.activa = activa
 
     @staticmethod
-    def __get_tasks_by_query(query):
+    def __get_Reserva_by_query(query):
         db = get_db()
         cursor = db.cursor()
         cursor.execute(query)
         rows = cursor.fetchall()
 
-        tasks = []
+        Reservas = []
         for row in rows:
-            tasks.append(
-                Task(
+            Reservas.append(
+                Reserva(
                     id=row[0],
                     nombre=row[1],
                     apellido=row[2],
@@ -36,11 +36,11 @@ class Task:
                 )
             )
         cursor.close()
-        return tasks
+        return Reservas
 
     @staticmethod
     def GET_mostrar_formulario():
-        return Task.__get_tasks_by_query(
+        return Reserva.__get_Reserva_by_query(
             """
             SELECT id, nombre, apellido, email, fecha_entrada, fecha_salida, completada, activa
             FROM reserva
@@ -74,7 +74,7 @@ class Task:
         cursor.close()
 
         if row:
-            return Task(
+            return Reserva(
                 id=row[0],
                 nombre=row[1],
                 apellido=row[2],
@@ -117,14 +117,14 @@ class Task:
         cursor.close()
 
     @staticmethod
-    def serialize(task):
+    def serialize(Reserva):
         return {
-            'id': task.id,
-            'nombre': task.nombre,
-            'apellido': task.apellido,
-            'email': task.email,
-            'fecha_entrada': task.fecha_entrada.strftime('%Y-%m-%d %H:%M:%S'),
-            'fecha_salida': task.fecha_salida.strftime('%Y-%m-%d %H:%M:%S'),
-            'completada': task.completada,
-            'activa': task.activa
+            'id': Reserva.id,
+            'nombre': Reserva.nombre,
+            'apellido': Reserva.apellido,
+            'email': Reserva.email,
+            'fecha_entrada': Reserva.fecha_entrada.strftime('%Y-%m-%d %H:%M:%S'),
+            'fecha_salida': Reserva.fecha_salida.strftime('%Y-%m-%d %H:%M:%S'),
+            'completada': Reserva.completada,
+            'activa': Reserva.activa
         }

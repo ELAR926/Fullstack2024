@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         try {
             // Enviar los datos del formulario al backend usando fetch
-            const response = await fetch('http://127.0.0.1:5000/api/tasks/reservas', {
+            const response = await fetch('http://127.0.0.1:5000/api/Form/reserva', {
                 method: 'POST',
                 body: formData
             });
