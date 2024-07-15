@@ -1,13 +1,13 @@
 from flask import jsonify, request, redirect, url_for
-from app.models import Reserva  
+from app.models import Reserva
 
 # Ruta para mostrar el formulario (GET)
 
 
 def mostrar_formulario():
-    tasks = Reserva.GET_mostrar_formulario()
-    serialized_tasks = [Reserva.serialize(task) for task in tasks]
-    return jsonify(serialized_tasks)
+    Reservas = Reserva.GET_mostrar_formulario()
+    serialized_Reservas = [Reserva.serialize(Reserva) for Reserva in Reservas]
+    return jsonify(serialized_Reservas)
 
 # Ruta para procesar el formulario (POST)
 
