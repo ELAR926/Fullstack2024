@@ -56,19 +56,19 @@
 
     <main>
       <section class="form-reserva">
-        <form id="miFormulario" method="POST" action="http://127.0.0.1:5000/api/tasks/reservas">
+        <form id="miFormulario" method="GET" action="http://127.0.0.1:5000/api/Form/reserva">
           <h2>Reserva tu cabaña</h2>
 
           <label for="Nombre">Nombre</label>
-          <input id="Nombre" type="text" />
+          <input id="Nombre" type="text" name="nombre" />
           <br />
 
           <label for="Apellido">Apellido</label>
-          <input id="Apellido" type="text" />
+          <input id="Apellido" type="text" name="apellido"/>
           <br />
 
           <label for="email">E-mail</label>
-          <input id="email" type="text" />
+          <input id="email" type="text" name="email" />
           <br />
 
           <label>Día de Entrada</label>
